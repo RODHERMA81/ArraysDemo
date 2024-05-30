@@ -30,7 +30,7 @@ public class App
 		
 		if(args.length == 0) {
 			System.out.println("No se han recibido los argumentos esperados");
-		} else if (args.length != 4 {
+		} else if (args.length != 4){
 			System.out.println("No se han recibido cuatro argumentos");
 		} else {
 			//Mostrar o manejar los argumentos recibidos.
