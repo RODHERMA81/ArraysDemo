@@ -38,6 +38,8 @@ public class App
 				System.out.println(argumento);
 			ARRAY_SIZE = Integer.parseInt(args[1]); // "20"
 			System.out.println("El tamaño del array es : " + ARRAY_SIZE);
+			
+			
 		
 		}
 }}
