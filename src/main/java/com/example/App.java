@@ -8,8 +8,8 @@ public class App
 {
 	private static int ARRAY_SIZE;
 	private static String nombre;
-	
-	
+
+
 	public static void main(String[] args)
 	{
 		// Las variables que se declaran dentro de metodos que son locales y no se inicializan a un valor
@@ -36,6 +36,10 @@ public class App
 			System.out.println("SE HAN RECIBIDO LOS SIGUIENTES ARGUMENTOS");
 			for(String argumento : args)
 				System.out.println(argumento);
+			ARRAY_SIZE = Integer.parseInt(args[1]); // "20"
+			System.out.println("El tamaño del array es : " + ARRAY_SIZE);
+		
 		}
+}}
+		
 	
-	}
