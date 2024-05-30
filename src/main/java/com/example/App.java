@@ -7,6 +7,7 @@ package com.example;
 public class App 
 {
 	private static int ARRAY_SIZE;
+	private static double CUARTO_ARGUMENTO;
 	private static String nombre;
 
 
@@ -16,6 +17,7 @@ public class App
 		// por defecto de forma implicita
 		
 		String otroNombre = null;
+		
 		
 		/*Manejo de los argumentos que recibe el metodo main, es decir, la App cuando se ejecuta.
 		 * Porque la App cuando se ejecuta recibe como parametro un array de argumentos de tipo String (String[] args).
@@ -28,16 +30,25 @@ public class App
 		
 		if(args.length == 0) {
 			System.out.println("No se han recibido los argumentos esperados");
-		} else if (args.length != 3) {
-			System.out.println("No se han recibido tres argumentos");
+		} else if (args.length != 4 {
+			System.out.println("No se han recibido cuatro argumentos");
 		} else {
 			//Mostrar o manejar los argumentos recibidos.
 			
 			System.out.println("SE HAN RECIBIDO LOS SIGUIENTES ARGUMENTOS");
 			for(String argumento : args)
 				System.out.println(argumento);
-			ARRAY_SIZE = Integer.parseInt(args[1]); // "20"
-			System.out.println("El tamaño del array es : " + ARRAY_SIZE);
+			
+			System.out.println("----------------");
+			ARRAY_SIZE = Integer.parseInt(args[1]);
+			System.out.println("Mostrar el valor de la variable args[1]:");
+			System.out.println(ARRAY_SIZE);
+			System.out.println("---------------");
+			CUARTO_ARGUMENTO = Double.parseDouble(args[3]);
+			System.out.println(CUARTO_ARGUMENTO);
+			
+			//EJERCICIO DEL JUEVES, 30 DE MAYO
+			
 			
 			
 		
